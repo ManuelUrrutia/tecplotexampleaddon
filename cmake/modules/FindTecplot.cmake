@@ -8,7 +8,7 @@
 #   find_package (Tecplot REQUIRED)
 #   include_directories ("${TECPLOT_INCLUDE_DIR}")
 #   add_library (myaddon main.cpp)
-#   target_link_libraries (myaddon SHARED ${TECPLOT_LIBS})
+#   target_link_libraries (myaddon ${TECPLOT_LIBS})
 
 set (TECPLOT_INSTALL_DIR $ENV{TEC_360_2009} CACHE PATH "Tecplot installation directory")
 
