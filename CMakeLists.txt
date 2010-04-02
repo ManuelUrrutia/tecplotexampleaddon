@@ -11,4 +11,5 @@ add_library (${PROJECT_NAME}
 )
 target_link_libraries (${PROJECT_NAME} ${TECPLOT_LIBS})
 
+include (cmake/SetupCompilerFlags.cmake)
 include (cmake/SetupMSVCUserFile.cmake)
