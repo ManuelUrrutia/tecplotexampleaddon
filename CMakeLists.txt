@@ -8,8 +8,11 @@ include_directories ("${TECPLOT_INCLUDE_DIR}")
 add_library (${PROJECT_NAME}
     SHARED
     src/main.cpp
-)
-target_link_libraries (${PROJECT_NAME} ${TECPLOT_LIBS})
+    )
+target_link_libraries (${PROJECT_NAME}
+    libtec
+    tptoolbox
+    )
 
 include (cmake/SetupCompilerFlags.cmake)
 include (cmake/SetupMSVCUserFile.cmake)
