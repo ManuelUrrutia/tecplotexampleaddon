@@ -95,7 +95,7 @@ if (WIN32)
         )
     set_target_properties (tptoolbox
         PROPERTIES
-        IMPORTED_LOCATION ${TECPLOT_TOOLBOX_LIB_DEBUG}
+        IMPORTED_LOCATION_DEBUG ${TECPLOT_TOOLBOX_LIB_DEBUG}
         )
 endif ()
 
